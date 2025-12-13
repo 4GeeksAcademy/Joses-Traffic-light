@@ -28,6 +28,7 @@ const TrafficLight = () => {
 				{colors.map((color, index) => (
 					<div
 						key={index}
+						onClick={() => setActive(index)}
 						className="rounded-circle mb-3"
 						style={{
 							width: "80px",
